@@ -1,0 +1,164 @@
+.card {
+  background-color:  hsl(213, 19%, 18%);
+  padding: 15px;
+  border-radius: 18px;
+  text-align: start; 
+}
+
+.star {
+  position: relative;
+  margin: 15px;
+  border-radius: 50%;
+  background-color:  hsl(213, 19%, 24%);
+  width: 45px;
+  height: 45px;
+}
+
+.star > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
+.card > .about {
+  padding-inline: 0;
+  margin-block: 20px;
+  padding-inline: 15px;
+}
+
+.about > h1 {
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 10px;
+}
+
+.about > p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.card > .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-inline: 15px;
+}
+
+.buttons > .numbers {
+  margin-right: 10px;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  background-color: hsl(213, 19%, 24%);
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.numbers:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.buttons > .active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card > .submitButton {
+  margin: 30px 0 15px 0;
+  text-align: center;
+}
+
+.submitButton > a {
+  display: inline-block;
+  width: 85%;
+  padding-block: 12px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  border-radius: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.submitButton > a:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.thankYou {
+  text-align: center;
+}
+
+.thanksCard > .about > p {
+  padding-bottom: 15px;   
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.image > span {
+  margin-top: 25px;
+  padding: 9px;
+  font-size: 15px; 
+  background-color: hsla(25, 97%, 53%, 0.1);
+  color: hsl(25, 97%, 53%);
+  border-radius: 18px;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  padding-top: 15px;
+  color: hsl(0, 0%, 100%); 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    padding-inline: 16px;
+    border-radius: 30px;
+  }
+
+  .thanksCard {
+    width: 80%;
+    margin: auto;
+  }
+
+  .star {
+    margin: 18px 15px 30px 16px;
+  }
+
+  .card > .buttons {
+    padding-inline: 0px;
+    margin-inline: 5px;
+  }
+
+  .buttons > .numbers {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .submitButton > a {
+    width: 90%;
+  }
+}
