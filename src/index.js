@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/interactive-rating-component' exact element={<App  />}  />
+      <Route index element={<App  />}  />
       <Route path='ThankYouPage' element={<ThankYou />} />
     </Routes>
     </BrowserRouter>
