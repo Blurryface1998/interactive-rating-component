@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 */
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='/interactive-rating-component'>
+    <BrowserRouter>
     <Routes>
-      <Route index element={<App  />}  />
+      <Route path='/interactive-rating-component' exact element={<App  />}  />
       <Route path='ThankYouPage' element={<ThankYou />} />
     </Routes>
     </BrowserRouter>
