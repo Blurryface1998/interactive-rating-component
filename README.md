@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-WfJ0nNy5ud)
+- [Live Site URL](https://interactive-rating-component-o7hqneeie-blurryface1998.vercel.app/)
 
 ## My process
 
@@ -90,5 +90,5 @@ This is my first React app so I will continue practicing how to loop through JSX
 
 ## Author
 
-- Website - [Djordje Rajc](https://www.your-site.com)
+- Website - [Djordje Rajc]
 - Frontend Mentor - [@Blurryface1998](https://www.frontendmentor.io/profile/Blurryface1998)
