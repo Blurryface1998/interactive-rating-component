@@ -21,35 +21,35 @@ body {
   margin: 20% auto;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 23.4375rem) {
   #root {
     width: 95%;
     margin: 10% auto;
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 28.125rem) {
   #root {
     width: 80%;
     margin: 10% auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   #root {
     width: 60%;
     margin: 10% auto;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   #root {
     width: 50%;
     margin: 10% auto;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
   #root {
     width: 30%;
     margin: 10% auto;

@@ -1,17 +1,18 @@
 import './App.css';
 import svg from "./images/icon-star.svg";
 import { Link } from 'react-router-dom';
-import ButtonState from './ButtonState';
+import InputRadioButton from './InputRadioButton';
 import { useState } from 'react';
 
 function App() {
   const [count, setCount] = useState("0");
+  const numbers = ["1", "2", "3", "4", "5"];
   
   /* 
     Setting the count when you click on the button using button name: 
   */
-  const getButtonNameValue = (event) => {
-   setCount(event.target.name);
+  const getInputValue = (event) => {
+   setCount(event.target.value);
   };
   
   localStorage.setItem("Key", count);
@@ -22,7 +23,7 @@ function App() {
         <div className='star'><img 
         src={svg}  
         alt='icon star'
-        style={{width: "23px", height: "23px"}}/></div>
+        style={{width: "1.4375rem", height: "1.4375rem"}}/></div>
         <div className='about'>
           <h1>How did we do?</h1>
           <p>
@@ -30,9 +31,7 @@ function App() {
           </p>
         </div>
         <div className='buttons'>
-          <ButtonState  
-          buttons={["1", "2", "3", "4", "5"]}
-          onClickHandle={getButtonNameValue}/>
+          <InputRadioButton  inputRadio={numbers} onClickHandle={getInputValue} />
         </div>
         <div className='submitButton'>
           <Link to="./ThankYouPage">Submit</Link>

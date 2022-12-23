@@ -1,17 +1,17 @@
 .card {
   background-color:  hsl(213, 19%, 18%);
-  padding: 15px;
-  border-radius: 18px;
+  padding: 0.9375rem;
+  border-radius: 1.125rem;
   text-align: start; 
 }
 
 .star {
   position: relative;
-  margin: 15px;
+  margin: 0.9375rem;
   border-radius: 50%;
   background-color:  hsl(213, 19%, 24%);
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
 }
 
 .star > img {
@@ -21,73 +21,86 @@
   transform: translate(-50%, -50%);
   max-width: 100%;
   height: auto;
-  padding: 2px;
+  padding: 0.125rem;
 }
 
 .card > .about {
-  padding-inline: 0;
-  margin-block: 20px;
-  padding-inline: 15px;
+  margin-block: 1.25rem;
+  padding-inline: 0.9375rem;
 }
 
 .about > h1 {
   color: hsl(0, 0%, 100%);
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .about > p {
   color: hsl(217, 12%, 63%);
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
-.card > .buttons {
+.card > .buttons > form {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding-inline: 15px;
+  padding-inline: 0.9375rem;
 }
 
-.buttons > .numbers {
-  margin-right: 10px;
-  border: none;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 18px;
+form > label {
+  position: relative;
+  width: 2.8125rem;
+  height: 2.8125rem;
   background-color: hsl(213, 19%, 24%);
   color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.numbers:hover {
-  background-color: hsl(216, 12%, 54%);
-  color: hsl(0, 0%, 100%);
-}
 
-.buttons > .active {
+form > .active {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
 
+form > label:not(.active):hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+form > label > input[type="radio"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: inherit;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
 .card > .submitButton {
-  margin: 30px 0 15px 0;
+  margin: 1.875rem 0 0.9375rem 0;
   text-align: center;
 }
 
 .submitButton > a {
   display: inline-block;
   width: 85%;
-  padding-block: 12px;
+  padding-block: 0.75rem;
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
-  font-size: 16px;
-  border-radius: 18px;
+  font-size: 1rem;
+  border-radius: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -102,29 +115,29 @@
 }
 
 .thanksCard > .about > p {
-  padding-bottom: 15px;   
+  padding-bottom: 0.9375rem;   
 }
 
 .image {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 0.9375rem;
 }
 
 .image > span {
-  margin-top: 25px;
-  padding: 9px;
-  font-size: 15px; 
+  margin-top: 1.5625rem;
+  padding: 0.5625rem;
+  font-size: 0.9375rem; 
   background-color: hsla(25, 97%, 53%, 0.1);
   color: hsl(25, 97%, 53%);
-  border-radius: 18px;
+  border-radius: 1.125rem;
 }
 
 .attribution { 
-  font-size: 11px; 
+  font-size: 0.6875rem; 
   text-align: center;
-  padding-top: 15px;
+  padding-top: 0.9375rem;
   color: hsl(0, 0%, 100%); 
 }
 
@@ -132,10 +145,10 @@
   color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
   .card {
-    padding-inline: 16px;
-    border-radius: 30px;
+    padding-inline: 1rem;
+    border-radius: 1.875rem;
   }
 
   .thanksCard {
@@ -144,18 +157,18 @@
   }
 
   .star {
-    margin: 18px 15px 30px 16px;
+    margin: 1.125rem 0.9375rem 1.875rem 1rem;
   }
 
   .card > .buttons {
-    padding-inline: 0px;
-    margin-inline: 5px;
+    padding-inline: 0;
+    margin-inline: 0.3125rem;
   }
 
-  .buttons > .numbers {
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
+  .buttons > form > label {
+    margin-right: 0.625rem;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 
   .submitButton > a {
